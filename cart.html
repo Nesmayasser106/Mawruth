@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Experience - Mawruth</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<body>
+
+    <header>
+        <div class="logo">Mawruth</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="product details.html">Product Details</a></li>
+                <li><a href="market.html">Market</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="signin.html" class="btn btn-signin">Sign In</a>
+            <a href="signup.html" class="btn btn-signup">Sign Up</a>
+        </div>
+    </header>
+<div class="hero">
+        <div class="hero-text">Cart</div>
+    </div>
+
+    <div class="container">
+        <div class="cart-section">
+            <h2>Cart</h2>
+            <div class="coupon">
+                <input type="text" placeholder="Coupon code">
+                <button>Update Cart</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="remove">×</span></td>
+                        <td><img src="images/Wadi El Hitan Protected Area.jpg" alt="Wadi El Hitan Protected Area" class="product-img"></td>
+                        <td>Wadi El Hitan Protected Area</td>
+                        <td>$42.00</td>
+                        <td><input type="number" value="2" class="quantity" min="1"></td>
+                        <td>$84.00</td>
+                    </tr>
+                    <tr>
+                        <td><span class="remove">×</span></td>
+                        <td><img src="images/Birket KarunSeven Hotel Fayoum.jpg" alt="Birket Karun/Seven Hotel Fayoum" class="product-img"></td>
+                        <td>Birket Karun/Seven Hotel Fayoum</td>
+                        <td>$42.00</td>
+                        <td><input type="number" value="2" class="quantity" min="1"></td>
+                        <td>$84.00</td>
+                    </tr>
+                    <tr>
+                        <td><span class="remove">×</span></td>
+                        <td><img src="images/Fayoum market.jpg" alt="Fayoum market" class="product-img"></td>
+                        <td>Fayoum market</td>
+                        <td>$42.00</td>
+                        <td><input type="number" value="2" class="quantity" min="1"></td>
+                        <td>$84.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="totals">
+            <h2>Cart totals</h2>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$252.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free shipping<br>Shipping to <strong>Egypt</strong>.<br><a href="#" style="color:#fff; text-decoration:underline;">Change address</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$252.00</strong></td>
+                </tr>
+            </table>
+            <select>
+                <option>Egypt</option>
+            </select>
+            <button>Proceed to checkout</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content container">
+            <div>
+                <div class="footer-logo">MAWRUTH</div>
+                <p>info@mawruth.com<br>+123 456 7890<br>123 Travel Street, Wanderlust City</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="book.html">Book</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Mawruth. All rights reserved.</p>
+    </footer>
+<script src="JavaScript/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.destinations-hero {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 100px 20px 80px;
+    margin-top: -1px;
+}
+
+.destinations-hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    
+}
+
+.destinations-hero p {
+    font-size: 15px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    border: solid 5px #f5f5f5;
+    border-radius : 25px; ;
+}
+
+.world-map {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Articles Section */
+.articles-section {
+    background-color: #fffaf0; /* لون بيج فاتح مثل الصورة */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.articles-section h2 {
+    font-size: 32px;
+    color: #002244;
+    margin-bottom: 60px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.article-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-card h3 {
+    font-size: 22px;
+    margin: 20px;
+    color: #002244;
+}
+
+.article-card p {
+    margin: 0 20px 20px;
+    color: #555;
+}
+
+.date {
+    display: block;
+    margin: 0 20px 20px;
+    color: #888;
+    font-size: 14px;
+}
+
+.view-btn {
+    background: transparent;
+    border: none;
+    color: #002244;
+    font-weight: bold;
+    margin: 0 20px 20px;
+    cursor: pointer;
+}
+
+.start-exploring-btn {
+    background: #002244;
+    color: white;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Experience Section */
+.experience-section {
+    background-color: #002244;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.experience-section h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #edeeef;
+    box-shadow: #053667;
+    color: #002244;
+}
+
+.experience-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    color: #002244;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.experience-card h3 {
+    margin: 20px;
+    font-size: 22px;
+}
+
+.experience-card p {
+    margin: 0 20px 20px;
+    color: #ddd;
+}
+
+
+/* Header */
+header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 80px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-signin {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-signup {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+        }
+
+
+/* Footer */
+footer {
+    background: #0b1e3a url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4') center/cover no-repeat;
+    color: white;
+    padding: 100px 60px 40px;
+    position: relative;
+    margin-top: -1px;
+}
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(11,30,58,0.85);
+}
+.footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.footer-logo { font-size: 48px; font-weight: 700; margin-bottom: 30px; }
+.footer-links a { color: #ddd; display: block; margin-bottom: 16px; font-size: 18px; transition: color 0.3s; }
+.footer-links a:hover { color: #a3d9ff; }
+.social-icons a { color: white; font-size: 30px; margin-left: 20px; transition: color 0.3s; }
+.social-icons a:hover { color: #a3d9ff; }
+.copyright { text-align: center; margin-top: 60px; font-size: 16px; opacity: 0.8; }
+
+/* Mobile Responsiveness */
+@media (max-width: 1400px) {
+    .container, .book-page .container, footer, nav { padding: 0 40px; }
+}
+@media (max-width: 992px) {
+    .book-content { flex-direction: column; gap: 60px; }
+    .filter-sidebar { flex: 1; }
+}
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    nav ul { 
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: #0b1e3a;
+        flex-direction: column;
+        padding: 120px 40px;
+        transition: 0.4s;
+    }
+    nav ul.active { left: 0; }
+    .container, .book-page .container, footer, nav { padding: 0 20px; }
+    .book-page h1 { font-size: 48px; }
+    .subtitle { font-size: 20px; }
+    .experiences h2 { font-size: 40px; }
+    .experience-card img { height: 200px; }
+}       

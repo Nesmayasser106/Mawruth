@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.8;
+    font-size: 18px;
+}
+.container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+
+/* Header */
+header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 80px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-signin {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-signup {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+        }
+
+/* Main */
+main { margin-top: 0px; padding: 0 20px; width: 100%; }
+
+/* Hero Gallery */
+.hero-gallery {
+    max-width: 1500px;
+    /* 1. قمنا بزيادة الحد الأقصى للطول أو إلغائه تماماً */
+    max-height: none; 
+    
+    /* 2. تحديد طول ثابت كبير أو استخدام نسبة مئوية من شاشة المستخدم */
+    height: 800px; /* يمكنك زيادة هذا الرقم حسب الرغبة، مثلاً 1000px */
+    display: flex;
+    margin-right: 20px;
+    margin-top: 0;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border: 5px solid #fff;
+}
+
+/* إضافة هذا الجزء لضمان أن الصورة بداخل الحاوية تتمدد بشكل صحيح */
+.hero-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* أهم خاصية: تجعل الصورة تملأ الطول الجديد دون أن تمط */
+    display: block;
+}
+
+.explore-hero {
+    /* إذا كانت هذه الحاوية تحتوي على الصور، نزيد الطول هنا أيضاً */
+    min-height: 150vh; /* تجعل القسم يأخذ طول الشاشة بالكامل على الأقل */
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 60px 20px 100px;
+}
+.explore-hero h1 {
+    font-size: 64px;
+    margin-bottom: 60px;
+}
+.hero-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    max-height: 200vh;
+    margin: 0 auto;
+}
+.hero-gallery img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease;
+}
+.hero-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+    padding: 120px 0;
+    text-align: center;
+}
+.section h2 {
+    font-size: 52px;
+    color: #0b1e3a;
+    margin-bottom: 80px;
+    font-weight: 700;
+}
+
+/* Category & Media Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px;
+}
+.category-card, .media-card {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease;
+}
+.category-card:hover, .media-card:hover {
+    transform: translateY(-15px);
+}
+.category-card img, .media-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.category-card:hover img, .media-card:hover img {
+    transform: scale(1.1);
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 40px;
+    color: white;
+}
+.overlay h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* Interactive Map */
+.interactive-map {
+    background: #0b1e3a;
+    color: white;
+}
+.map-card {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+.map-card img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.map-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(11,30,58,0.8);
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 80%;
+}
+.map-overlay h3 {
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+.map-overlay p {
+    font-size: 22px;
+}
+
+/* Footer */
+footer {
+    background: #0b1e3a url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px 40px;
+    position: relative;
+}
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(11,30,58,0.85);
+}
+.footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.footer-logo { font-size: 48px; font-weight: 700; margin-bottom: 30px; }
+.footer-links a { color: #ddd; display: block; margin-bottom: 16px; font-size: 18px; }
+.social-icons a { color: white; font-size: 30px; margin-left: 20px; }
+.copyright { text-align: center; margin-top: 60px; font-size: 16px; }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: #0b1e3a;
+        flex-direction: column;
+        padding: 120px 40px;
+        transition: 0.4s;
+    }
+    nav ul.active { left: 0; }
+    .explore-hero h1 { font-size: 48px; }
+    .hero-gallery { grid-template-columns: 1fr; gap: 20px; }
+    .hero-gallery img { height: 250px; }
+    .section h2 { font-size: 44px; margin-bottom: 60px; }
+    .grid { gap: 40px; }
+    .category-card img, .media-card img { height: 300px; }
+    .overlay h3 { font-size: 28px; }
+    .map-card img { height: 400px; }
+    .map-overlay { padding: 40px; }
+    .map-overlay h3 { font-size: 36px; }
+    .map-overlay p { font-size: 20px; }
+}
